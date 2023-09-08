@@ -28,7 +28,7 @@ let connData = {
     database : "testDB"
 }
 
-let {customerData} = require("./customerData");
+let {customerData} = require("./customerData.js");
 
 app.get("/svr/employees/reset",function(req,res){
     let connection = mysql.createConnection(connData);
